@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Bulb</title>
+    <style>
+      .container {
+        width: 300px;
+        border: 1px solid #ddd;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        margin-bottom: 20px;
+      }
+      input[type="button"] {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2WAnExtUFXg74jTjfvC7aReqFGm5TFdZ4g&usqp=CAU"
+        alt=""
+      />
+      <input type="button" value="ON" onclick="change(this);" />
+    </div>
+
+    <script>
+      function change(btn) {
+        let img = document.querySelector("img");
+        if (btn.value == "ON") {
+          btn.value = "OFF";
+          img.src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9MQVrzjU2LMk4il7DAarBNLlhIsaT8L1pA&usqp=CAU";
+        } else {
+          btn.value = "ON";
+          img.src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2WAnExtUFXg74jTjfvC7aReqFGm5TFdZ4g&usqp=CAU";
+        }
+      }
+    </script>
+  </body>
+</html>

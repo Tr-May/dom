@@ -6,20 +6,36 @@
     <title>Selecting Elements</title>
     <style>
       .container {
-        text-align: center;
+        text-align: justify;
       }
-      #note {
-        width: 100px;
-        height: 100px;
-        margin: 20px auto;
-        border: 3px solid #000;
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+        padding: 50px 20px;
+        box-shadow: 2px 2px 2px 2px #ddd;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div id="note"></div>
-      <button>Change Color</button>
+      <p class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        aspernatur veritatis consequuntur ipsa consectetur soluta cupiditate,
+        laudantium corrupti non id quos asperiores pariatur iste ut recusandae
+        officiis perferendis voluptate at.
+      </p>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        aspernatur veritatis consequuntur ipsa consectetur soluta cupiditate,
+        laudantium corrupti non id quos asperiores pariatur iste ut recusandae
+        officiis perferendis voluptate at.
+      </p>
+      <button onclick="changeColor();">Change Color</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
+<!-- event => event handler
+click => onclick -->
