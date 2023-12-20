@@ -27,11 +27,15 @@
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2WAnExtUFXg74jTjfvC7aReqFGm5TFdZ4g&usqp=CAU"
         alt=""
       />
-      <input type="button" value="ON" onclick="change(this);" />
+      <!-- <input type="button" value="ON" onclick="change(this);" /> -->
+      <input type="button" value="ON" />
     </div>
 
     <script>
+      let btn = document.querySelector("input[type=button]");
+
       function change(btn) {
+        // console.log(btn);
         let img = document.querySelector("img");
         if (btn.value == "ON") {
           btn.value = "OFF";
@@ -43,6 +47,16 @@
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2WAnExtUFXg74jTjfvC7aReqFGm5TFdZ4g&usqp=CAU";
         }
       }
+      btn.addEventListener("click", (event) => change(event.target));
     </script>
   </body>
 </html>
+
+<!-- browser run => load the page / unload
+event => event handler
+click => onclick 
+mouseover => onmouseover
+
+mouse event
+key event 
+scroll event  -->
